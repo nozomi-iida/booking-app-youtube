@@ -1,0 +1,19 @@
+{
+  "name": "booking-app-youtube",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "https://github.com/nozomi-iida/booking-app-youtube.git",
+  "license": "MIT",
+  "scripts": {
+    "start": "nodemon index.js"
+  },
+  "dependencies": {
+    "bcrypt": "^5.0.0",
+    "body-parser": "^1.19.0",
+    "express": "^4.17.1",
+    "express-graphql": "^0.11.0",
+    "graphql": "^15.3.0",
+    "jsonwebtoken": "^8.5.1",
+    "mongoose": "^5.10.5"
+  }
+}
