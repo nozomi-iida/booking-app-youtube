@@ -6,9 +6,6 @@ const User = require('../../models/user');
 
 module.exports = {
   events: async () => {
-    if (!req.isAuth) {
-      throw new Error('Unauthenticated!');
-    }
     try {
       const events = await Event.find();
       return events.map(event => {
