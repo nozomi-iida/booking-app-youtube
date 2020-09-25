@@ -1,7 +1,7 @@
 import React from 'react';
 import './Modal.css';
 
-export default ({ title, children, canCancel, canConfirm, onCancel, onConfirm }) => {
+export default ({ title, children, canCancel, canConfirm, onCancel, onConfirm, confirmText }) => {
   return (
     <div className='modal'>
       <header className='modal__header'>
@@ -16,7 +16,7 @@ export default ({ title, children, canCancel, canConfirm, onCancel, onConfirm })
         )}
         {canConfirm && (
           <button className='btn' onClick={onConfirm}>
-            Confirm
+            {confirmText}
           </button>
         )}
       </section>
